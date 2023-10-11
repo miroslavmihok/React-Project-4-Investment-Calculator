@@ -26,6 +26,12 @@ const InvestmentForm = (props) => {
 
     const resetClickHandler = () => {
       props.onCancel(null);
+      setState({
+        currentSavings: "",
+        yearlySavings: "",
+        expectedInterest: "",
+        investmentDuration: ""
+    })
     };
     
     return (
